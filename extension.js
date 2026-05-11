@@ -305,7 +305,7 @@ function activate(context) {
             }
 
             // Pass 2: align comment groups across consecutive commented lines
-            const alignedLines = alignCommentGroups(formattedLines);
+            const alignedLines = alignCommentGroups(formattedLines, options);
 
             // Build edits
             const edits = [];
