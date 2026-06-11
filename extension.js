@@ -153,7 +153,7 @@ function formatAsmLine(line) {
         }
     }
 
-    // Attach comment with sentinel — replaced by group-alignment pass
+    // Attach comment with sentinel - replaced by group-alignment pass
     if (comment) {
         formattedLine += '\x00' + comment;
     }
@@ -243,7 +243,7 @@ function alignCommentGroups(lines, tabOptions) {
         // Determine the comment column for this group.
         let commentCol;
         if (!hasCodeLines) {
-            // Pure comment-continuation block — flush left.
+            // Pure comment-continuation block - flush left.
             commentCol = 0;
         } else {
             commentCol = maxCodeLen + MIN_GAP;
